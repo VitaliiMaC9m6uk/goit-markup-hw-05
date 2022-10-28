@@ -40,6 +40,25 @@ address{
 .site-nav .link.current{
     color: var(--logo-blue-color);
 }
+.link-head{
+    position: relative;
+
+    padding: 0;
+        margin: 0;
+}
+.link.current::after{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom:0;
+
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--logo-blue-color);
+}
 .invisibility{
     opacity: 0;
 }
