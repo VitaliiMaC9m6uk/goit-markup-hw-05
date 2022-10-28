@@ -40,25 +40,7 @@ address{
 .site-nav .link.current{
     color: var(--logo-blue-color);
 }
-.link-head{
-    position: relative;
 
-    padding: 0;
-        margin: 0;
-}
-.link.current::after{
-    content: "";
-    position: absolute;
-    left:0;
-    bottom:0;
-
-    padding:0;
-    margin:0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--logo-blue-color);
-}
 .invisibility{
     opacity: 0;
 }
@@ -102,6 +84,26 @@ img{
 }
 .site-nav .link-head:not(:last-child){
     margin-right: 50px;
+}
+.link-head {
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+}
+
+.link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--logo-blue-color);
 }
 .mail-link,
 .tel-link,
@@ -155,6 +157,9 @@ img{
     display: flex;
     justify-content: space-between;    
 }
+.nav-logo{
+    display:flex;
+}
 .border-head{
     background-color: var(--white-color);    
     border-bottom: 1px solid #ECECEC;
@@ -198,15 +203,15 @@ img{
     background-size: cover;   
 }
 .button{
+    display: inline-block;
+    margin: 0 auto;
     min-width: 216px;
     height: 50px;
     background-color: var(--logo-blue-color);
     color: var(--white-color);
     border-color:transparent;
     border-radius: 4px;
-    cursor: pointer;
-    display: inline-block;
-    margin:0 auto;
+    cursor: pointer;    
     
     font-family: 'Roboto';
     font-style: normal;
@@ -269,6 +274,12 @@ img{
 .work .list{
     display: flex;
     justify-content: space-between;
+}
+.list-work{
+    position: relative;
+}
+.description-work::before{
+
 }
 .team .list{
     display: flex;
