@@ -458,7 +458,36 @@ img{
     flex-wrap: wrap;  
     gap:30px;
 }
+.image-description{
+    position: relative;
+}
+/* .link-collection:hover{
 
+} */
+.description-collection.is-hidden{
+    opacity: 0;
+    transition:500ms opacity linear;
+}
+.description-collection{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    margin: 0;
+    padding: 0;    
+}
+.text-image{
+    padding: 63px 24px;
+    margin:0;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
 .decoration-link{
     text-decoration: none;
     }
