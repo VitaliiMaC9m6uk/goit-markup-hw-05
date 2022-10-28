@@ -278,8 +278,26 @@ img{
 .list-work{
     position: relative;
 }
-.description-work::before{
+.description-work{
+    display: flex;
+    font-weight: 700;    
+    line-height: 16px;    
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;   
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;    
+     
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 70px;
 
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--white-color);
 }
 .team .list{
     display: flex;
