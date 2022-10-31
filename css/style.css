@@ -478,9 +478,11 @@ img{
 .link-collection:hover .description-collection,
 .link-collection:focus .description-collection{
     opacity: 1;
-    transition:opacity 300ms linear,
+    transition:opacity 250ms var(--time-function),
     transform 250ms var(--time-function);
-    transform: translateY(0);
+    transform: translateY(0); 
+    /* transform: rotate(0deg); */
+    
 }
 .description-collection{
     display: block;
@@ -495,6 +497,9 @@ img{
     opacity: 0;   
 
     transform: translateY(100%);
+    /* transform-origin: bottom left;
+    transform: rotate(180deg);
+    transition: transform 500ms var(--time-function); */
 }
 .text-image{
     padding: 63px 24px;
