@@ -426,7 +426,8 @@ img{
     cursor: pointer;  
     
     transition: color 250ms var(--time-function), 
-    background-color 250ms var(--time-function);
+    background-color 250ms var(--time-function),
+    box-shadow 250ms var(--time-function);
 }
 
 .list-btn:not(:last-child){
@@ -494,7 +495,7 @@ img{
     background-color: rgba(33, 150, 243, 0.9);
     margin: 0;
     padding: 0; 
-    opacity: 0;   
+    opacity: 1;   
 
     transform: translateY(100%);
     /* transform-origin: bottom left;
